@@ -1,0 +1,2 @@
+Use https://app.diagrams.net/ (draw.io) para la realización del 
+Data Model debido a su rápido acceso, diversidad de opciones y figuras

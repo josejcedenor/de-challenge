@@ -1,0 +1,7 @@
+1. Instalar python 3.7: https://www.python.org/downloads/
+
+2. Ubicarte desde consola a la carpeta de-challenge y ejecutar para instalar las dependencias:
+pip3 install -r requirements.txt
+
+3. Ejecuar el siguiente comando en consola para correr el job:
+python etl_job.py
