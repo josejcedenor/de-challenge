@@ -1,0 +1,7 @@
+1. Trabajar en un ambiente que tenga docker
+
+2. Ubicarte desde consola a la carpeta de-challenge y ejecutar el siguiente comando para crear la imagen docker: 
+docker build -t de-challenge .
+
+3. Ejecuar el siguiente comando en consola para correr el job: 
+docker run -it de-challenge

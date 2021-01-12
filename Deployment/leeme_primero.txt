@@ -1,0 +1,13 @@
+Hay dos deployments debido a que no domino por completo Docker
+y no conseguí la manera de poder acceder a los archivos generados
+por el job de manera sencilla. Estas archivos son las diferentes
+etapas del datalake, logs del proceso y el reporte de los resultados
+en un archivo .HTML
+
+El archivo docker_deployment.txt te permite correr el job en
+cualquier ambiente docker, imprimiendo en consola los resultados
+
+El archivo python_deployment.txt te permite correr el job en
+un ambiente que permita usar python y sus comandos
+
+Puedes probar con cualquiera de los dos deployment

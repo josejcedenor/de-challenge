@@ -34,7 +34,7 @@ def extract(datalake_folder, date_folder, job_time):
         logging.debug('Extraction task completed')
         print(f'[{datetime.now()}] Extraction task completed')
     except:
-        logging.debug('Extraction task error')
+        logging.error('Extraction task error')
         print(f'[{datetime.now()}] Extraction task error')
         status = 400
     finally:
@@ -80,7 +80,7 @@ def transform(games_filepath, consoles_filepath):
         logging.debug('Transform task completed')
         print(f'[{datetime.now()}] Transform task completed')
     except:
-        logging.debug('Transform task error')
+        logging.error('Transform task error')
         print(f'[{datetime.now()}] Transform task error')
         status = 400
         transform_df= ''
@@ -101,7 +101,7 @@ def load(datalake_folder, date_folder, job_time, transform_df):
         logging.debug('Load task completed')
         print(f'[{datetime.now()}] Load task completed')
     except:
-        logging.debug('Load task error')
+        logging.error('Load task error')
         print(f'[{datetime.now()}] Load task error')
         status = 400
     finally:
@@ -163,7 +163,7 @@ def report(transform_df):
         logging.debug('Report task completed')
         print(f'[{datetime.now()}] Report task completed')
     except:
-        logging.debug('Report task error')
+        logging.error('Report task error')
         print(f'[{datetime.now()}] Report task error')
         status = 400
     return {'status': status}
@@ -191,7 +191,7 @@ def main():
         logging.debug('Job executed correctly')
         print(f'[{datetime.now()}] Job executed correctly')
     else:
-        logging.debug('Job executed with errors')
+        logging.error('Job executed with errors')
         print(f'[{datetime.now()}] Job executed with errors')
 
 if __name__ == "__main__":

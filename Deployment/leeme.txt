@@ -1,2 +1,0 @@
-1. Run this command in the folder where the Dockerfile is: docker build -t de-challenge .
-2. Then run this command: docker run -it de-challenge
